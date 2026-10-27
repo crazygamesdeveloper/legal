@@ -27,11 +27,12 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Last updated: 14 October 2026</p>
+<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Last updated: 27 October 2026</p>
 
-<p class="lead"><strong>In short: this game collects nothing.</strong> It has no account, no advertising, no
-analytics and no purchases, and it does not send anything about you anywhere. Everything below is the detail
-behind that sentence.</p>
+<p class="lead"><strong>In short:</strong> no account, no advertising, no purchases, no advertising ID. If you agree on
+the privacy screen when the game first starts, it sends crash reports and play statistics to Google Firebase so we can
+fix crashes and tune the levels. If you choose "No thanks", it sends nothing. You can change your answer at any time
+in Settings &rarr; Privacy Policy. Everything below is the detail behind that.</p>
 
 <h2>1. We do not ask who you are</h2>
 <p>The game has no account, no sign-in and no profile. We never ask for your name, email address, phone number,
@@ -42,11 +43,31 @@ photos, contacts or location. There is nothing to log into and nothing to fill i
 written to local storage on your own device. They are not uploaded, we cannot read them, and we hold no copy.
 Uninstalling the game deletes them.</p>
 
-<h2>3. No analytics, no crash reporting, no advertising</h2>
-<p>This version contains no analytics SDK, no crash-reporting SDK and no advertising SDK. No advertising
-identifier is read. The game makes no network requests of its own, so no device identifier, IP address or usage
-event reaches us or any third party through it.</p>
-<p>We have nothing to sell, rent or share, because we hold nothing.</p>
+<h2>3. Crash reports and play statistics (only if you agree)</h2>
+<p>When the game first starts it shows a privacy screen. Nothing below is sent before you answer it, and nothing at
+all if you choose "No thanks". If you choose "Accept", the game uses two Google Firebase services:</p>
+<ul>
+  <li><strong>Firebase Crashlytics</strong> (crash reports): when the game crashes or hits an error, a report with the
+  error and its stack trace, the device model, the Android version, free memory and disk, screen orientation, the game
+  version, and a random installation identifier.</li>
+  <li><strong>Google Analytics for Firebase</strong> (play statistics): which levels you start and finish (level number,
+  difficulty, attempt number, win or loss, time spent, revives used), restarting a level, using a Hint or a Shuffle,
+  unlocking a shelf and reviving (and whether coins were used), and the highest level you have reached; plus what
+  Firebase records by itself: the first launch, sessions and their length, app updates, the device model, Android
+  version, language, country (derived from the IP address, which is not stored), the game version and a random app
+  instance identifier.</li>
+</ul>
+<p>We do not collect your name, email, contacts, photos, precise location or advertising ID (the advertising ID
+permission is removed from the game, and advertising features are switched off). We do not use this data for
+advertising, we do not sell it and we do not share it with anyone: Google processes it for us as our service
+provider, under the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing
+terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. It is sent encrypted (HTTPS)
+and may be processed in the United States and other countries where Google operates.</p>
+<p><strong>How long:</strong> play statistics are kept for 14 months, crash reports for 90 days, then deleted.</p>
+<p><strong>Changing your mind:</strong> Settings &rarr; Privacy Policy &rarr; "Stop sharing" (or "Share data"). Stopping
+turns statistics off at once and crash reports off from the next start of the game.</p>
+<p>The game also asks Google Firebase Remote Config, after you have agreed, for two settings that control update
+prompts. That request carries the random installation identifier and the game version, nothing else.</p>
 
 <h2>4. Rating the game on Google Play</h2>
 <p>After you have played for a while, the game may ask Google Play to show its standard "rate this app" card. That
@@ -71,27 +92,30 @@ Statement</a>.</p>
 and cannot be bought, so no payment data exists and none is processed.</p>
 
 <h2>7. Children</h2>
-<p>The game is not directed to children under 13. Because the game collects no data at all, no data from a child
-is collected either.</p>
+<p>The game is not directed to children under 13. We do not knowingly collect data from children; if you believe a
+child has sent us crash reports or statistics, write to us and we will delete them.</p>
 
 <h2>8. Your rights</h2>
 <p>Laws such as the GDPR (EU/UK), the LGPD (Brazil) and the CCPA (California) give you the right to see, correct or
-delete data a company holds about you. In our case the honest answer is that there is nothing to give you, correct
-or delete, because we hold no data about you. The only data that exists is your save file, on your own device:</p>
+delete data a company holds about you. We hold no name or contact data; the statistics and crash reports are tied
+only to the random identifiers above:</p>
 <ul>
-  <li><strong>To delete it:</strong> uninstall the game, or clear its storage in your device settings.</li>
-  <li><strong>To ask us anything about this:</strong> write to the address in section 11.</li>
+  <li><strong>To stop sharing:</strong> Settings &rarr; Privacy Policy &rarr; "Stop sharing".</li>
+  <li><strong>To delete what was sent:</strong> write to the address in section 11. We delete the statistics and crash
+  reports of your installation with Firebase's deletion tools; if we cannot find them from what you send us, we tell you.</li>
+  <li><strong>To delete your progress:</strong> uninstall the game, or clear its storage in your device settings.</li>
   <li>You may also complain to your local data protection authority.</li>
 </ul>
 <p>We do not charge for any request and we do not treat you differently for making one.</p>
 
 <h2>9. Security</h2>
-<p>The strongest protection for personal data is not to collect it, which is the approach this game takes.</p>
+<p>We collect as little as the two purposes above need, nothing before your answer, and everything is sent encrypted.
+Access to the Firebase project is limited to the developer's accounts.</p>
 
 <h2>10. Changes</h2>
-<p>If a future update adds analytics, crash reporting, advertising or purchases, this page will be updated first to
-describe exactly what is collected and by whom, the date at the top will change, and the Google Play "Data safety"
-section for the app will be updated to match. The policy changes before the release does.</p>
+<p>If a future update changes what is collected, or adds advertising or purchases, this page will be updated first to
+describe exactly what is collected and by whom, the date at the top will change, the Google Play "Data safety" section
+will be updated to match, and the game will show its privacy screen again. The policy changes before the release does.</p>
 
 <h2>11. Contact</h2>
 <p>Crazy Games Developer &mdash; <a href="mailto:contact@crazygamesdeveloper.com">contact@crazygamesdeveloper.com</a></p>
