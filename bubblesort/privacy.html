@@ -15,11 +15,13 @@
   main { max-width:44rem; margin:0 auto; padding:2.5rem 16px 4rem; }
   h1 { font-size:1.6rem; line-height:1.25; margin:0 0 .25rem }
   h2 { font-size:1.08rem; margin:2rem 0 .5rem; padding-top:1rem; border-top:1px solid var(--rule) }
+  h3 { font-size:1rem; margin:1.25rem 0 .25rem }
   p, li { margin:.5rem 0 }
   ul { padding-left:1.25rem }
+  code { font-size:.88em; overflow-wrap:anywhere }
   .meta { color:var(--muted); font-size:.9rem; margin:0 0 1.5rem }
   .lead { background:rgba(138,90,60,.07); border-left:3px solid var(--link); padding:.8rem 1rem; border-radius:0 6px 6px 0 }
-  a { color:var(--link) }
+  a { color:var(--link); overflow-wrap:anywhere }
   pre { white-space:pre-wrap; font-size:.8rem; line-height:1.45; background:rgba(138,90,60,.05); padding:1rem; border-radius:6px }
   footer { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.9rem }
 </style>
@@ -27,49 +29,145 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Last updated: 27 October 2026</p>
+<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Version 2 (game version 1.2.0) &middot; Last updated: 1 November 2026</p>
 
-<p class="lead"><strong>In short:</strong> no account, no advertising, no purchases, no advertising ID. If you agree on
-the privacy screen when the game first starts, it sends crash reports and play statistics to Google Firebase so we can
-fix crashes and tune the levels. If you choose "No thanks", it sends nothing. You can change your answer at any time
-in Settings &rarr; Privacy Policy. Everything below is the detail behind that.</p>
+<p class="lead"><strong>In short:</strong> no account and no purchases. The game shows ads from <strong>Google
+AdMob</strong>. To show and measure them, Google may use your device's advertising ID, an approximate location worked
+out from your IP address, information about your device and how you interact with the ads. Where the law requires it
+(for example in the EEA, the UK, Switzerland and some US states), Google's consent form asks you first, and you can
+change your choice later in Settings &rarr; Ad privacy. Separately, if you agree on the game's privacy screen, the game
+sends crash reports and play statistics to Google Firebase, <strong>without</strong> your advertising ID; if you choose
+"No thanks", it sends none. Everything below is the detail behind that.</p>
 
 <h2>1. We do not ask who you are</h2>
 <p>The game has no account, no sign-in and no profile. We never ask for your name, email address, phone number,
-photos, contacts or location. There is nothing to log into and nothing to fill in.</p>
+photos, contacts or location, and the game does not ask for the location permission. There is nothing to log into
+and nothing to fill in.</p>
 
 <h2>2. Your progress stays on your device</h2>
-<p>Your current level, your coins and boosters, and your settings (sound, music, vibration and language) are
-written to local storage on your own device. They are not uploaded, we cannot read them, and we hold no copy.
-Uninstalling the game deletes them.</p>
+<p>Your current level, your coins, boosters, Recipe Book tickets, cards and golden shards, the café look you chose,
+your daily gift progress (which day comes next, the date of your last claim and the latest time the game has seen, used
+so that a gift cannot be claimed twice), and your settings (sound, music, vibration and language) are written to local
+storage on your own device. They are not uploaded, we cannot read them, and we hold no copy. Uninstalling the game
+deletes them.</p>
 
 <h2>3. Crash reports and play statistics (only if you agree)</h2>
-<p>When the game first starts it shows a privacy screen. Nothing below is sent before you answer it, and nothing at
-all if you choose "No thanks". If you choose "Accept", the game uses two Google Firebase services:</p>
+<p>When the game first starts, and again whenever this policy changes what is collected (as it does with this
+version), it shows a privacy screen. Nothing below is sent before you answer it, and nothing at all if you choose
+"No thanks". If you choose "Accept", the game uses two Google Firebase services:</p>
 <ul>
   <li><strong>Firebase Crashlytics</strong> (crash reports): when the game crashes or hits an error, a report with the
   error and its stack trace, the device model, the Android version, free memory and disk, screen orientation, the game
   version, and a random installation identifier.</li>
   <li><strong>Google Analytics for Firebase</strong> (play statistics): which levels you start and finish (level number,
-  difficulty, attempt number, win or loss, time spent, revives used), restarting a level, using a Hint or a Shuffle,
-  unlocking a shelf and reviving (and whether coins were used), and the highest level you have reached; plus what
-  Firebase records by itself: the first launch, sessions and their length, app updates, the device model, Android
-  version, language, country (derived from the IP address, which is not stored), the game version and a random app
-  instance identifier.</li>
+  difficulty, attempt number, win or loss, how far you got, time spent, number of taps, revives used), restarting a
+  level, using a Hint or a Refresh, unlocking a shelf and reviving (and whether coins or an ad paid for it), which
+  pop-up windows you close and how long they were open, the game noticing and recovering from a stuck screen, opening
+  the Home screen, opening a Recipe Book box (with a ticket, coins or golden shards, and whether the card was new),
+  completing a card series, claiming the daily gift, and the highest level you have reached; plus what Firebase records
+  by itself: the first launch, sessions and their length, app updates, the device model, Android version, language,
+  country (derived from the IP address, which is not stored), the game version and a random app instance identifier.</li>
+  <li><strong>Ad events in the statistics:</strong> because the game contains Google's ads software (section 4), Google
+  Analytics for Firebase also records by itself, for players who accepted, when an ad is requested, when an ad is on
+  screen or counted as seen, when an ad is tapped and when a rewarded ad grants its reward (events named
+  <code>ad_query</code>, <code>ad_exposure</code>, <code>ad_impression</code>, <code>ad_click</code> and
+  <code>ad_reward</code>). They are tied to the same random app instance identifier, never to your advertising ID, and
+  we use them only to see how ads affect play.</li>
 </ul>
-<p>We do not collect your name, email, contacts, photos, precise location or advertising ID (the advertising ID
-permission is removed from the game, and advertising features are switched off). We do not use this data for
-advertising, we do not sell it and we do not share it with anyone: Google processes it for us as our service
-provider, under the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing
-terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. It is sent encrypted (HTTPS)
-and may be processed in the United States and other countries where Google operates.</p>
+<p><strong>No advertising ID in Firebase:</strong> the game tells Firebase not to collect the advertising ID and never
+to use this data for advertising or ad personalisation; Google signals and data sharing with other Google products are
+switched off, and our Firebase project is not linked to our AdMob account. We do not collect your name, email,
+contacts, photos or precise location. We do not use this data for advertising, we do not sell it and we do not share
+it with anyone: Google processes it for us as our service provider, under the
+<a href="https://firebase.google.com/terms/data-processing-terms">Firebase data processing terms</a> and the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>. It is sent encrypted (HTTPS) and may be
+processed in the United States and other countries where Google operates.</p>
 <p><strong>How long:</strong> play statistics are kept for 14 months, crash reports for 90 days, then deleted.</p>
 <p><strong>Changing your mind:</strong> Settings &rarr; Privacy Policy &rarr; "Stop sharing" (or "Share data"). Stopping
-turns statistics off at once and crash reports off from the next start of the game.</p>
-<p>The game also asks Google Firebase Remote Config, after you have agreed, for two settings that control update
-prompts. That request carries the random installation identifier and the game version, nothing else.</p>
+turns statistics off at once and crash reports off from the next start of the game. This choice does not change the
+ads (section 4), and your ad choices do not change it.</p>
+<p>After you have agreed, the game also asks Google Firebase Remote Config for a few settings: when to ask you to
+update, and how often ads may appear (for example the level from which ads between levels start and the minimum time
+between them). That request carries the random installation identifier, the game version and the basic details Remote
+Config uses to pick settings (country, language, time zone, Android version), nothing else. If you chose "No thanks",
+the game uses the settings built into it.</p>
 
-<h2>4. Rating the game on Google Play</h2>
+<h2 id="ads">4. Advertising (Google AdMob)</h2>
+<p>Bubbly Bakes is free to play and is paid for by ads. The ads are provided by <strong>Google AdMob</strong>, a
+service of Google. We do not use any other ad network in this version.</p>
+
+<h3>Where ads appear</h3>
+<ul>
+  <li><strong>Rewarded ads, only when you choose them:</strong> a button that says what you get (a revive, a locked
+  shelf, a free booster or a bigger win reward). If you do not tap it, no rewarded ad plays.</li>
+  <li><strong>Ads between levels</strong> (interstitials), from level 5: after a level ends and before the next one
+  starts, never during play, not in the first minutes of a session, and with a minimum time between them.</li>
+  <li><strong>A banner</strong> at the bottom of the screen during play, from level 5, on screens tall enough to fit it
+  without covering the game.</li>
+  <li><strong>A box ad</strong> (medium rectangle) on the win screen, from level 5.</li>
+</ul>
+<p>No ad is requested before you have answered the game's privacy screen and, where it applies, Google's consent form.
+We ask Google to show only ads suitable for a teen and adult audience (content rated PG or lower). The game can be
+played offline; ads simply do not appear without a connection.</p>
+
+<h3>What Google's ads software may collect</h3>
+<p>To choose, show and measure ads, limit how often you see the same ad, and prevent fraud and abuse, the Google Mobile
+Ads software in the game sends Google, directly from your device:</p>
+<ul>
+  <li>your device's <strong>advertising ID</strong> (a resettable identifier provided by Google Play services) and the
+  <strong>app set ID</strong>;</li>
+  <li>your <strong>IP address</strong>, which may be used to estimate your general location (such as your city or
+  region, never your precise location);</li>
+  <li><strong>device and app information</strong>, such as the device model, Android version, language, screen size,
+  network type, and the game's name and version;</li>
+  <li><strong>ad interactions and app activity</strong>: ads requested, shown, tapped or watched to the end, app
+  launches and taps;</li>
+  <li><strong>diagnostic information</strong> about the performance of the game and of the ads software (for example
+  app launch time and freezes).</li>
+</ul>
+<p>Google receives this data itself and uses it under its own policies: see
+<a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use
+its services</a>, <a href="https://policies.google.com/technologies/ads">How Google uses cookies and other technologies
+in advertising</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Because Google may
+also use it for its own purposes, this counts as sharing data with a third party, and our Google Play "Data safety"
+section says so. It is sent encrypted. Where Google's consent form is shown, it also lists the other ad technology
+providers Google works with. We do not receive your advertising ID or any of this data about you: AdMob only gives us
+totals (for example how many ads were shown in a country and what they earned).</p>
+
+<h3>Personalised and non-personalised ads</h3>
+<ul>
+  <li><strong>Personalised ads</strong> may use your advertising ID and information about your activity in this and
+  other apps and websites to choose ads that may interest you.</li>
+  <li><strong>Non-personalised ads</strong> are chosen from general information such as this game, the time and your
+  approximate location. Google still uses data such as your IP address and, when available, the advertising ID to
+  measure ads, limit how often you see them and prevent fraud.</li>
+  <li><strong>In the EEA, the UK and Switzerland</strong>, Google's consent form (shown after the game's privacy screen)
+  asks whether Google and its partners may store or access information on your device and use your data for
+  personalised ads. If you do not agree, you may see non-personalised or limited ads, or none.</li>
+  <li><strong>In US states with privacy laws</strong> (such as California), letting Google use your data for targeted
+  advertising may count as "selling" or "sharing" personal information. Where Google's message applies to you, you can
+  opt out of it in Settings &rarr; Ad privacy.</li>
+  <li><strong>Elsewhere</strong>, ads may be personalised unless you delete or reset your advertising ID, or opt out of
+  ads personalisation, in your device settings (below).</li>
+</ul>
+
+<h3>Your ad choices</h3>
+<ul>
+  <li><strong>In the game:</strong> Settings &rarr; <strong>Ad privacy</strong> reopens Google's form so you can review
+  or change your choices. This option appears where Google's form applies to you.</li>
+  <li><strong>On your device:</strong> Android Settings &rarr; Privacy &rarr; Ads (on some devices Settings &rarr;
+  Google &rarr; Ads, or Settings &rarr; Security &amp; privacy &rarr; More privacy settings &rarr; Ads). There you can
+  <strong>delete</strong> your advertising ID (apps then receive only zeros instead of an ID) or <strong>reset</strong>
+  it to a new one; older Android versions offer "Opt out of Ads Personalization".</li>
+  <li><strong>With Google:</strong> <a href="https://myadcenter.google.com/">My Ad Center</a> controls the ads Google
+  shows you when you are signed in to a Google Account.</li>
+</ul>
+<p>These choices change how ads are chosen, not whether ads appear: this version has no option to remove ads. Ads and
+statistics are separate: declining statistics does not turn ads off, and your ad choices do not turn statistics on or
+off. How long Google keeps advertising data is described in
+<a href="https://policies.google.com/technologies/retention">How Google retains data it collects</a>.</p>
+
+<h2>5. Rating the game and updates on Google Play</h2>
 <p>After you have played for a while, the game may ask Google Play to show its standard "rate this app" card. That
 card is displayed and handled entirely by Google Play: we do not see whether it was shown, whether you rated, or
 what you wrote. A rating or review you choose to post is public on Google Play and is covered by the
@@ -80,44 +178,57 @@ the installed version; the game sends nothing of its own, and we do not receive 
 <a href="https://play.google.com/about/play-terms/">Google Play Terms of Service</a> and the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-<h2>5. The one case where another company sees a request</h2>
+<h2>6. Opening this page, and tapping an ad</h2>
 <p>If you tap the Privacy Policy link inside the game, your device opens this website in your browser. This site is
 hosted on GitHub Pages, so GitHub's servers receive that request, including your IP address, the same way any
 website visit works. That is a visit to a web page, not data the game sends. GitHub's handling of it is covered by
 the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy
-Statement</a>.</p>
+Statement</a>. If you tap an ad, the advertiser's website or store page opens, and it has its own privacy practices.</p>
 
-<h2>6. No in-app purchases</h2>
-<p>There are no purchases, subscriptions or paid currency in this version. Coins and boosters are earned by playing
-and cannot be bought, so no payment data exists and none is processed.</p>
+<h2>7. No in-app purchases</h2>
+<p>There are no purchases, subscriptions or paid currency in this version. Coins, boosters, tickets and golden shards
+are earned by playing (some by choosing to watch a rewarded ad); Recipe Book boxes are opened only with them and cannot
+be bought with money. No payment data exists and none is processed.</p>
 
-<h2>7. Children</h2>
-<p>The game is not directed to children under 13. We do not knowingly collect data from children; if you believe a
-child has sent us crash reports or statistics, write to us and we will delete them.</p>
+<h2>8. Children</h2>
+<p>The game is not directed to children under 13, and the game tells Google that its ad requests are not for a
+child-directed audience. We do not knowingly collect data from children; if you believe a child has sent us crash
+reports or statistics, write to us and we will delete them. You can also delete or reset the advertising ID on the
+child's device as described in section 4.</p>
 
-<h2>8. Your rights</h2>
-<p>Laws such as the GDPR (EU/UK), the LGPD (Brazil) and the CCPA (California) give you the right to see, correct or
-delete data a company holds about you. We hold no name or contact data; the statistics and crash reports are tied
-only to the random identifiers above:</p>
+<h2 id="rights">9. Your rights</h2>
+<p>Laws such as the GDPR (EU/UK), the LGPD (Brazil) and US state privacy laws such as the CCPA (California) give you
+the right to see, correct or delete data a company holds about you, and to opt out of targeted advertising. We hold no
+name or contact data; the statistics and crash reports are tied only to the random identifiers above:</p>
 <ul>
-  <li><strong>To stop sharing:</strong> Settings &rarr; Privacy Policy &rarr; "Stop sharing".</li>
-  <li><strong>To delete what was sent:</strong> write to the address in section 11. We delete the statistics and crash
-  reports of your installation with Firebase's deletion tools; if we cannot find them from what you send us, we tell you.</li>
+  <li><strong>To stop sharing statistics and crash reports:</strong> Settings &rarr; Privacy Policy &rarr; "Stop sharing".</li>
+  <li><strong>To delete what was sent to Firebase:</strong> write to the address in section 12. We delete the
+  statistics and crash reports of your installation with Firebase's deletion tools; if we cannot find them from what
+  you send us, we tell you.</li>
+  <li><strong>For advertising data:</strong> we do not hold it and cannot look it up. Use Settings &rarr; Ad privacy,
+  delete or reset your advertising ID (section 4), or the tools described in the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
   <li><strong>To delete your progress:</strong> uninstall the game, or clear its storage in your device settings.</li>
   <li>You may also complain to your local data protection authority.</li>
 </ul>
 <p>We do not charge for any request and we do not treat you differently for making one.</p>
 
-<h2>9. Security</h2>
-<p>We collect as little as the two purposes above need, nothing before your answer, and everything is sent encrypted.
-Access to the Firebase project is limited to the developer's accounts.</p>
+<h2>10. Security</h2>
+<p>We collect as little as the purposes above need. Statistics and crash reports are sent only after your answer; ads
+are requested only after the game's privacy screen and, where it applies, Google's consent form; everything is sent
+encrypted. Access to the Firebase project and the AdMob account is limited to the developer's accounts.</p>
 
-<h2>10. Changes</h2>
-<p>If a future update changes what is collected, or adds advertising or purchases, this page will be updated first to
-describe exactly what is collected and by whom, the date at the top will change, the Google Play "Data safety" section
-will be updated to match, and the game will show its privacy screen again. The policy changes before the release does.</p>
+<h2>11. Changes</h2>
+<p>If a future update changes what is collected, or adds purchases, this page will be updated first to describe
+exactly what is collected and by whom, the date and version at the top will change, the Google Play "Data safety"
+section will be updated to match, and the game will show its privacy screen again. The policy changes before the
+release does.</p>
+<p><strong>What changed in version 2 (game version 1.2.0):</strong> the game now shows ads from Google AdMob, which
+may use the advertising ID (section 4); the statistics now include ad events and the new Home, Recipe Book and daily
+gift events (section 3); Remote Config also sets how often ads may appear; the progress kept on your device now
+includes the Recipe Book and the daily gift (section 2). Version 1 was dated 27 October 2026.</p>
 
-<h2>11. Contact</h2>
+<h2>12. Contact</h2>
 <p>Crazy Games Developer &mdash; <a href="mailto:contact@crazygamesdeveloper.com">contact@crazygamesdeveloper.com</a></p>
 
 <footer><a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a> &middot; <a href="licenses.html">Licenses</a> &middot; <a href="../index.html">All legal pages</a></footer>
