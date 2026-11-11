@@ -29,7 +29,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Version 2 (game version 1.2.0) &middot; Last updated: 1 November 2026</p>
+<p class="meta">Bubbly Bakes &middot; Crazy Games Developer &middot; Version 3 (game version 1.2.1) &middot; Last updated: 10 November 2026</p>
 
 <p class="lead"><strong>In short:</strong> no account and no purchases. The game shows ads from <strong>Google
 AdMob</strong>. To show and measure them, Google may use your device's advertising ID, an approximate location worked
@@ -73,6 +73,12 @@ version), it shows a privacy screen. Nothing below is sent before you answer it,
   <code>ad_query</code>, <code>ad_exposure</code>, <code>ad_impression</code>, <code>ad_click</code> and
   <code>ad_reward</code>). They are tied to the same random app instance identifier, never to your advertising ID, and
   we use them only to see how ads affect play.</li>
+  <li><strong>Ad moments:</strong> at each moment of the game where an ad could appear (such as after a level), whether
+  one could be shown and, if not, the reason (for example, too soon after the previous ad, or none ready yet), the
+  level, and how a shown ad ended (closed, failed, or a reward given); and whether a "watch an ad" option was offered
+  and an ad was ready for it (events named <code>ad_opportunity</code>, <code>ad_show_end</code> and
+  <code>reward_offer_seen</code>). They are tied to the same random app instance identifier, never to your advertising
+  ID, and we use them only to fix ads that do not show and to space ads fairly.</li>
 </ul>
 <p><strong>No advertising ID in Firebase:</strong> the game tells Firebase not to collect the advertising ID and never
 to use this data for advertising or ad personalisation; Google signals and data sharing with other Google products are
@@ -223,6 +229,9 @@ encrypted. Access to the Firebase project and the AdMob account is limited to th
 exactly what is collected and by whom, the date and version at the top will change, the Google Play "Data safety"
 section will be updated to match, and the game will show its privacy screen again. The policy changes before the
 release does.</p>
+<p><strong>What changed in version 3 (game version 1.2.1):</strong> the statistics now include ad moments: whether an
+ad could be shown at a moment of the game and why not, how a shown ad ended, and whether a "watch an ad" option was
+offered (section 3). Nothing else changed. Version 2 was dated 1 November 2026.</p>
 <p><strong>What changed in version 2 (game version 1.2.0):</strong> the game now shows ads from Google AdMob, which
 may use the advertising ID (section 4); the statistics now include ad events and the new Home, Recipe Book and daily
 gift events (section 3); Remote Config also sets how often ads may appear; the progress kept on your device now
