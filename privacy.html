@@ -29,7 +29,7 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="meta">Jewelry Untangle &middot; Crazy Games Developer &middot; Last updated: 25 October 2026</p>
+<p class="meta">Jewelry Untangle &middot; Crazy Games Developer &middot; Last updated: SET_DATE_ON_PUBLISH</p>
 
 <p class="lead"><strong>In short:</strong> the game has no account. It shows ads through Google AdMob, it sells a few optional items through Google Play (Remove Ads and ring skins), and it sends
 crash reports and basic gameplay events so that we can fix crashes and see which levels are too hard. Payment is
@@ -82,8 +82,8 @@ that on your device so the items work offline. The game does not contact Google 
 this policy on the first screen of the game.</p>
 
 <h2>6. Diagnostics and gameplay data</h2>
-<p>To find crashes and to see which levels are too hard, the game uses Google Firebase (Crashlytics and Analytics),
-and Firebase Remote Config to receive settings such as how often ads appear.
+<p>To find crashes, to see which levels are too hard and to see why ads do or do not show, the game uses Google
+Firebase (Crashlytics and Analytics), and Firebase Remote Config to receive settings such as how often ads appear.
 Nothing is collected before you accept this policy on the first screen of the game. After that, these are
 collected:</p>
 <table>
@@ -97,6 +97,11 @@ collected:</p>
   <tr><td>Purchases: which item was bought, cancelled or failed, and its listed price and currency (no order number,
       account or payment details); Firebase also records Google Play purchases by itself</td><td>to count revenue and
       see whether the shop works</td></tr>
+  <tr><td>Ad moments: whether an ad could be shown at a moment of the game (such as after a level) and, if not, the
+      reason; the level; whether a rewarded ad was offered and whether one was ready; and how a shown ad ended
+      (watched, closed, failed). Firebase may also record ad requests, impressions, clicks and rewards by itself
+      (ad_query, ad_impression, ad_click, ad_reward)</td><td>to see why ads do or do not show, and to show fewer
+      ads that nobody sees</td></tr>
   <tr><td>A settings request to Firebase Remote Config: the app version, the device's language and country, and a
       Firebase installation identifier</td><td>to switch ads off or change how often they appear without an
       update</td></tr>
